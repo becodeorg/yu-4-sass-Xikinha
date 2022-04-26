@@ -10,6 +10,41 @@ body {
   background-attachment: fixed;
 }
 
+body #buttons {
+  text-align: center;
+}
+
+body .button {
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+body #red-button, body #red-button:visited {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+body #red-button:hover {
+  background-color: white;
+  border-color: white;
+  color: red;
+}
+
+body #blue-button, body #blue-button:visited {
+  background-color: blue;
+  border-color: blue;
+  color: white;
+}
+
+body #blue-button:hover {
+  background-color: white;
+  border-color: white;
+  color: blue;
+}
+
 body article {
   display: -webkit-box;
   display: -ms-flexbox;

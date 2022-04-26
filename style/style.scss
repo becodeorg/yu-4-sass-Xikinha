@@ -1,6 +1,6 @@
-$font-stack: "Space Mono", monospace;
 $primary-color: #2748b3;
 $primary-background-color: #000;
+$font-stack: "Space Mono", monospace;
 $padding: 16px;
 
 body {
@@ -24,6 +24,41 @@ body {
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
+
+    #buttons {
+        text-align: center;
+    }
+    	
+    .button {
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    #red-button, #red-button:visited {
+        background-color: red;
+        border-color: red;
+        color: white;
+    }
+
+    #red-button:hover {
+        background-color: white;
+        border-color: white;
+        color: red;
+    }
+
+    #blue-button, #blue-button:visited {
+        background-color: blue;
+        border-color: blue;
+        color: white;
+    }
+
+    #blue-button:hover {
+        background-color: white;
+        border-color: white;
+        color: blue;
+    }
   
     @mixin box-shadow {
         -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);

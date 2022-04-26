@@ -15,11 +15,20 @@
     />
 
     <link href="style/style.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
   </head>
+
   <body>
     <header>
       <h1>Learning to work with SASS</h1>
     </header>
+
+    <div id="buttons">
+        <button id="red-button" class="button" href="#">Red</button>
+        <button id="blue-button" class="button" href="#">Blue</button>
+    </div> 
 
     <article>
       <section id="selling-points">
@@ -340,4 +349,16 @@ aside[role="complementary"] {
       <h6>&copy; 2021 the entire open-source community</h6>
     </footer>
   </body>
+
+  <script>
+    $("#red-button").click(function(){
+        $("body").css("background-color","antiquewhite");
+        $("body").css("color","red");
+    })
+    $("#blue-button").click(function(){
+        $("body").css("background-color","#000");
+        $("body").css("color","#2748b3");
+    })
+  </script>
+
 </html>
