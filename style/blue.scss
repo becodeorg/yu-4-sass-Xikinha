@@ -1,6 +1,32 @@
-$primary-color: #2748b3;
-$primary-background-color: #000;
-$heading-color: #6b8eff;
-$code-background-color: #000;
+@use 'colors' as *;
+@use 'general';
 
-@import '_general';
+$primary-color: map-get($blue-theme, "primary-color");
+$primary-background-color: map-get($blue-theme, "primary-background-color");
+$heading-color: map-get($blue-theme, "heading-color");
+$code-background-color: map-get($blue-theme, "code-background-color");
+
+/* CSS style that should be updated */
+
+body {
+    color: $primary-color;
+    background-color: $primary-background-color;
+
+    article {
+        pre {
+            background: $code-background-color;
+        }
+    }
+
+    h1,
+    h2,
+    h6 {
+        color: $heading-color;
+    }
+
+    @mixin box-shadow {$shadow-specs:(10px 10px 19px -4px $shadow-colour);
+        -webkit-box-shadow: $shadow-specs;
+        -moz-box-shadow: $shadow-specs;
+        box-shadow: $shadow-specs;
+    }
+}
